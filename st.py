@@ -1,4 +1,3 @@
-
 import os
 import asyncio
 import sqlite3
@@ -10,6 +9,7 @@ from telegram import (
     InlineKeyboardMarkup,
     ReplyKeyboardMarkup,
 )
+
 from telegram.ext import (
     ApplicationBuilder,
     CommandHandler,
@@ -26,7 +26,6 @@ from telegram.ext import (
 TOKEN = os.getenv("BOT_TOKEN", "").strip()
 
 ADMIN_ID = 6394152529
-
 CHANNEL_ID = -1003727294346
 
 DB_NAME = "posts.db"
@@ -605,7 +604,7 @@ def main():
 
     if not TOKEN:
         raise ValueError(
-            "9155484331:AAE9NYdqqt5ua90hCno2nA0i5oQLyz0TAJE"
+            "Не задано BOT_TOKEN у Railway Variables!"
         )
 
     init_db()
