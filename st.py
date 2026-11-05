@@ -603,11 +603,11 @@ async def handle_admin_message(
 
 def main():
 
-    if not TOKEN:
+        if not TOKEN:
         raise ValueError(
             "9155484331:AAE9NYdqqt5ua90hCno2nA0i5oQLyz0TAJE"
-            "9155484331:AAE9NYdqqt5ua90hCno2nA0i5oQLyz0TAJE"
         )
+        
 
     init_db()
 
